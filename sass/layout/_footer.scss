@@ -1,0 +1,49 @@
+/* !!!-------------footer-----------!!!! */
+.footer {
+    background-color: $sectionBackgroundColor;
+
+    padding-top: 60px;
+    padding-bottom: 60px;
+    
+}
+
+.footer__content {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.footer__block{
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.footer__logo {
+    color: $lightTextColor;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.footer__title {
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $lightTextColor;
+
+    margin-bottom: 20px;
+}
+
+
+.footer__link {
+    line-height: 1.7;
+
+    transition: color $commonTransition;
+
+    &:hover,
+    &:focus {
+        color: $accentColor;
+    }
+}
+

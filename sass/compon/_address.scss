@@ -1,0 +1,17 @@
+.address {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+
+.address__connect {
+    color: $footerContactsColor;
+}
+
+.address__map {
+    color: $lightTextColor;
+}
+
+
+
