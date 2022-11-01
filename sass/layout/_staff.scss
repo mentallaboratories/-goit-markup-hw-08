@@ -10,10 +10,22 @@
     background: $backgroundColor;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+    max-width: 450px;
+
+    @media screen and (min-width: 760px){
+        max-width: 354px;
+        width: calc((100% - 30)/2);
+    }
+    @media screen and (min-width: 1200px){
+        max-width: 270px;
+        width: calc((100% - 90px)/4);
+    }
 }
 
 
 .staff__about {
+    width: 100%;
+
     text-align: center;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -23,7 +35,7 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 1.11;
-    color: var(--title-text-color);
+    color: $titleTextColor;
 
     margin-bottom: 10px;
 }

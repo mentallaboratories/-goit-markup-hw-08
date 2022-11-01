@@ -358,6 +358,7 @@ img {
 body {
   background-color: #FFFFFF;
   font-family: "Roboto", sans-serif;
+  color: #757575;
   font-size: 14px;
   letter-spacing: 0.03em;
 }
@@ -1102,6 +1103,11 @@ body {
 .activity {
   padding-top: 0;
 }
+@media screen and (max-width: 1200px) {
+  .activity {
+    display: none;
+  }
+}
 
 .activity__item {
   position: relative;
@@ -1146,7 +1152,7 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.11;
-  color: var(--title-text-color);
+  color: #212121;
   margin-bottom: 10px;
 }
 
