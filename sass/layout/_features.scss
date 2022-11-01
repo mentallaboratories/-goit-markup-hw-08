@@ -7,12 +7,12 @@
     
     @media screen and (min-width:760px) {
     max-width: 354px;
-    width: calc((100%-30px)/2);
+    width: calc((100% - 30px)/2);
     }
 
     @media screen and (min-width:1200px) {
     max-width: 270px;
-    width: calc((100%-90px)/4);
+    width: calc((100% - 90px)/4);
     }
    
 }
@@ -26,7 +26,6 @@
 
 .features__text {
         line-height: 1.71;
-        color: $plainTextColor;
 }
 
 

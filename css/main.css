@@ -358,7 +358,6 @@ img {
 body {
   background-color: #FFFFFF;
   font-family: "Roboto", sans-serif;
-  color: #757575;
   font-size: 14px;
   letter-spacing: 0.03em;
 }
@@ -492,6 +491,18 @@ body {
 }
 .social__link:hover .social__icon, .social__link:focus .social__icon {
   fill: #FFFFFF;
+}
+
+.section {
+  padding: 94px 0;
+}
+
+.section__title {
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: #212121;
+  margin-bottom: 50px;
 }
 
 .address {
@@ -635,18 +646,6 @@ body {
   .menu__link.current::after {
     top: 45px;
   }
-}
-
-.section {
-  padding: 94px 0;
-}
-
-.section__title {
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  color: var(--title-text-color);
-  margin-bottom: 50px;
 }
 
 .backdrop {
@@ -1061,20 +1060,20 @@ body {
 @media screen and (min-width: 760px) {
   .features__item {
     max-width: 354px;
-    width: 100%;
+    width: calc((100% - 30px) / 2);
   }
 }
 @media screen and (min-width: 1200px) {
   .features__item {
     max-width: 270px;
-    width: 25%;
+    width: calc((100% - 90px) / 4);
   }
 }
 
 .features__title {
   line-height: 1.15;
   text-transform: uppercase;
-  color: var(--title-text-color);
+  color: #212121;
   margin-bottom: 10px;
 }
 
