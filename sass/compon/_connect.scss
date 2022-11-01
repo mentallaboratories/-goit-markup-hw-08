@@ -3,21 +3,36 @@
 
     @media screen and (min-width:760px) {
             display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items:flex-start;
+        }
+    @media screen and (min-width:1200px) {
+            flex-direction: row;
             gap: 50px;
             align-items: center;
         }
 }
 
 .connect__link {
-    display: inline-flex;
-    gap: 10px;
-    align-items: center;
     color: $plainTextColor;
-
+    font-size: 12px;
+        
     &:hover,
     &:focus {
-        color: $accentColor;
-    }
+            color: $accentColor;
+        }
+
+    @media screen and (min-width:760px) {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+        }
+    
+    @media screen and (min-width:1200px) {
+            gap: 10px;
+            font-size: 14px;
+        }
 }
 
 .connect__icon {

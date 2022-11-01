@@ -19,9 +19,14 @@
 
 
 .menu__link {
+    color: $linkTextColor;
 
     &:hover,
     &:focus {
+        color: $accentColor;
+    }
+
+    &.current {
         color: $accentColor;
     }
 
@@ -30,7 +35,7 @@
         content: "";
         position: absolute;
         left: 0;
-        top: 45px;
+        top: 46px;
 
         display: inline-block;
         width: 100%;
@@ -39,5 +44,10 @@
 
 
         background-color: $accentColor;
+
+        @media screen and (min-width:1200px) {
+            top: 45px;
+        }
     }
+
 }

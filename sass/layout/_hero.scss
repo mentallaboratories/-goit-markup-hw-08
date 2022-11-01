@@ -14,9 +14,10 @@
         url(../images/hero-bg.jpg);
     background-size:cover;
     background-position: center;
+    max-width: 480px;
 
     @media screen and (min-width:480px) {
-            max-width: 480px;
+            
         }
     
     @media screen and (min-width:768px) {
@@ -53,10 +54,14 @@
 }
 
 .hero__button{
+    width: 200px;
     &:hover,
     &:focus {
         color: $accentColor;
         background-color: $backgroundColor;
+    }
+    @media screen and (min-width:1200px) {
+         width: 216px;
     }
 }
 
