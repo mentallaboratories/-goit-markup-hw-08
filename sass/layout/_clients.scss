@@ -2,11 +2,27 @@
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
 .client__cardset {
-    justify-items: center;
+    display: flex;
+    flex-wrap: wrap;
 }
 .client__item {
-        width: 170px;
-        height: 92px;
+    
+    height: 92px;
+
+    @media screen and (max-width:767) {
+    max-width: 210px;
+
+    }
+
+    @media screen and (min-width:768){
+    max-width: 226px;
+    flex-basis: calc((100% - 30)/2)
+    }
+        
+    @media screen and (min-width:1200) {
+    max-width: 170px;
+    flex-basis: calc((100% - 90)/4)
+    }
 }
 .client__link {
     width: 100%;
@@ -40,6 +56,11 @@
     .client__link:focus & {
         fill: $accentColor;
     }
+}
+
+
+.client__image {
+
 }
     
        
