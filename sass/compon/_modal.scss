@@ -183,15 +183,6 @@
 .validation__input {
     appearance: none;
     position: absolute;
-    line-height: 1.16;
-
-    @media screen and (max-width:1200px)  {
-        font-size: 12px;
-
-    } 
-    @media screen and (min-width:1200px) {
-        line-height: 1.7;
-    }
 }
 
 .validation {
@@ -201,9 +192,13 @@
     width: 425px;
     height: 24px;
     padding: auto 0;
-
-    line-height: 1.7;
-
+    @media screen and (max-width:1200px) {
+        font-size: 12px;
+        line-height: 1.16;
+    }
+    @media screen and (min-width:1200px){
+        line-height: 1.7;
+    }
 
 }
 
