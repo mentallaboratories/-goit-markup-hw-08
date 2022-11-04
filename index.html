@@ -111,15 +111,39 @@
                 <h2 class="section__title">Чим ми займаємося</h2>
                 <ul class="cardset">
                     <li class="activity__item">
-                        <img class="activity__image" src="./images/whatwedo1.jpg" alt="what we do 1" width="370">
+                        <picture>
+                            <source srcset="
+                                ./images/active/img1.png 1x,
+                                ./images/active/img1-2x.png 2x,
+                                " 
+                                media="(min-width:1200px)"
+                                />
+                            <img src="./images/active/img1.png" alt="active1"/>
+                        </picture>
                         <h3 class="activity__title">Десктопні додатки</h3>
                     </li>
                     <li class="activity__item">
-                        <img class="activity__image" src="./images/whatwedo2.jpg" alt="what we do 2" width="370">
+                        <picture>
+                            <source srcset="
+                                ./images/active/img2.png 1x,
+                                ./images/active/img2-2x.png 2x,
+                                " 
+                                media="(min-width:1200px)"
+                                />
+                            <img src="./images/active/img2.png" alt="active2"/>
+                        </picture>
                         <h3 class="activity__title">Мобільні додатки</h3>
                     </li>
                     <li class="activity__item">
-                        <img class="activity__image" src="./images/whatwedo3.jpg" alt="what we do 3" width="370">
+                        <picture>
+                            <source srcset="
+                                ./images/active/img3.png 1x,
+                                ./images/active/img3-2x.png 2x,
+                                " 
+                                media="(min-width:1200px)"
+                                />
+                            <img src="./images/active/img3.png" alt="active3"/>
+                        </picture>
                         <h3 class="activity__title">Дизайнерські рішення</h3>
                     </li>
                 </ul>
@@ -132,13 +156,31 @@
                 <h2 class="section__title">Наша команда</h2>
                 <ul class="cardset">
                     <li class="staff__item">
-                            <img srcset="./images/team/card1-270.jpg 270w,
-                                                        ./images/team/card1-540.jpg 540w,
-                                                        ./images/team/card1-810.jpg 810w"
-                                sizes="(min-width:1200px) 25vw, (min-width:768px) 50vw, 100vw" 
-                                src="./images/team/card1-270.jpg" alt="card1">
-                            
-                                <div class="staff__about">
+
+                            <!-- picture adaptive -->
+                        <picture>
+                            <source
+                            srcset="
+                            ./images/team/card1-dt.jpg 1x,
+                            ./images/team/card1-dt2x.jpg 2x,
+                            "
+                            media="(min-width:1200px)"
+                            />
+                            <source srcset="
+                            ./images/team/card1-tab.jpg 1x,
+                            ./images/team/card1-tab2x.jpg 2x,
+                            " media="(min-width:768px)" 
+                            />
+                            <source
+                            srcset="
+                            ./images/team/card1-mob.jpg 1x,
+                            ./images/team/card1-mob2x.jpg 2x,
+                            "
+                            media="(max-width:767px)"
+                            />
+                            <img src="./images/team/card1-dt.jpg" alt="card1"/>
+                        </picture>
+                        <div class="staff__about">
                             <h3 class="staff__name">Ігор Дем'яненко</h3>
                             <p class="staff__position">Product Designer</p>
                             <ul class="social">
@@ -174,14 +216,28 @@
                         </div>
                     </li>
                     <li class="staff__item">
-                            <img 
-                            srcset="./images/team/card2-270.jpg 270w,
-                            ./images/team/card2-540.jpg 540w,
-                            ./images/team/card2-810.jpg 810w"
-                            
-                            sizes="(min-width:1200px) 25vw, (min-width:768px) 50vw, 100vw"
-                            
-                            src="./images/team/card2-270.jpg" alt="card2">
+                        <picture>
+                            <source
+                            srcset="
+                                ./images/team/card2-dt.jpg 1x,
+                                ./images/team/card2-dt2x.jpg 2x,
+                            "
+                            media="(min-width:1200px)"
+                            />
+                            <source srcset="
+                                ./images/team/card2-tab.jpg 1x,
+                                ./images/team/card2-tab2x.jpg 2x,
+                            " media="(min-width:768px)" 
+                            />
+                            <source
+                            srcset="
+                                ./images/team/card2-mob.jpg 1x,
+                                ./images/team/card2-mob2x.jpg 2x,
+                            "
+                            media="(max-width:767px)"
+                            />
+                            <img src="./images/team/card2-dt.jpg" alt="card2"/>
+                        </picture>
 
                         <div class="staff__about">
                             <h3 class="staff__name">Ольга Рєпіна</h3>
@@ -220,12 +276,24 @@
                     </li>
                     <li class="staff__item">
                     
-                            <img srcset="./images/team/card3-270.jpg 270w,
-                                                    ./images/team/card3-540.jpg 540w,
-                                                     ./images/team/card3-810.jpg 810w"
-                                sizes="(min-width:1200px) 25vw, (min-width:768px) 50vw, 100vw" 
-                                src="./images/team/card3-270.jpg"
-                                alt="card3">
+                        <picture>
+                            <source srcset="
+                                ./images/team/card3-dt.jpg 1x,
+                                ./images/team/card3-dt2x.jpg 2x,
+                                " 
+                                media="(min-width:1200px)" />
+                            <source srcset="
+                                ./images/team/card3-tab.jpg 1x,
+                                ./images/team/card3-tab2x.jpg 2x,
+                                " 
+                                media="(min-width:768px)" />
+                            <source srcset="
+                                ./images/team/card3-mob.jpg 1x,
+                                ./images/team/card3-mob2x.jpg 2x,
+                                " 
+                                media="(max-width:767px)" />
+                            <img src="./images/team/card3-dt.jpg" alt="card3"/>
+                        </picture>
                         
                         <div class="staff__about">
                             <h3 class="staff__name">Микола Тарасов</h3>
@@ -264,11 +332,24 @@
                     </li>
                     <li class="staff__item">
                         
-                            <img srcset="./images/team/card4-270.jpg 270w,
-                                ./images/team/card4-540.jpg 540w,
-                                ./images/team/card4-810.jpg 810w"
-                                sizes="(min-width:1200px) 25vw, (min-width:768px) 50vw, 100vw" 
-                                src="./images/team/card4-270.jpg" alt="card3">
+                        <picture>
+                            <source srcset="
+                                ./images/team/card4-dt.jpg 1x,
+                                ./images/team/card4-dt2x.jpg 2x,
+                                " 
+                                media="(min-width:1200px)" />
+                            <source srcset="
+                                ./images/team/card4-tab.jpg 1x,
+                                ./images/team/card4-tab2x.jpg 2x,
+                                " 
+                                media="(min-width:768px)" />
+                            <source srcset="
+                                ./images/team/card4-mob.jpg 1x,
+                                ./images/team/card4-mob2x.jpg 2x,
+                                " 
+                                media="(max-width:767px)" />
+                            <img src="./images/team/card4-dt.jpg" alt="card4"/>
+                        </picture>
                         
                         <div class="staff__about">
                             <h3 class="staff__name">Михайло Єрмаков</h3>

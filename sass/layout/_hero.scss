@@ -9,25 +9,36 @@
 
     background-repeat: no-repeat;
     background-color: #c4c4c4;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)),
-        url(../images/hero-bg.jpg);
+    background-image: $heroBgGradient, url(../images/hero/bg-mob.png);
     background-size:cover;
     background-position: center;
     max-width: 480px;
 
-    @media screen and (min-width:480px) {
-            
+    @include retina {
+            background-image: $heroBgGradient, url(../images/hero/bg-mob2x.png);
         }
     
-    @media screen and (min-width:768px) {
+
+  
+    
+    @include tablet {
             max-width: 768px;
+
+            background-image: $heroBgGradient, url(../images/hero/bg-tab.png);
+            @include retina {
+            background-image: $heroBgGradient, url(../images/hero/bg-tab2x.png);
+            }
         }
     
-    @media screen and (min-width:1200px) {
+    @include desktop {
             padding: 200px 0;
             max-width: 1600px;
             height: 600px;
+
+            background-image: $heroBgGradient, url(../images/hero/bg-dt.png);
+            @include retina {
+                background-image: $heroBgGradient, url(../images/hero/bg-dt2x.png);
+            }
         }
 }
 
@@ -46,7 +57,7 @@
     max-width: 360px;
 
     
-    @media screen and (min-width:1200px) {
+    @include desktop{
             font-size: 44px;
             line-height: 1.36;
             max-width: 696px;
@@ -60,7 +71,7 @@
         color: $accentColor;
         background-color: $backgroundColor;
     }
-    @media screen and (min-width:1200px) {
+    @include desktop {
          width: 216px;
     }
 }
