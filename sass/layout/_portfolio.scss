@@ -2,7 +2,9 @@
 
 .filter{
     margin-bottom: 50px;
+
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 9px;
 }
@@ -17,13 +19,21 @@
     position: relative;
 
     // width: calc((100%-60)/3);
-    max-width: 370px;
+    width: 100%;
     background: $backgroundColor;
     border: 1px solid #EEEEEE;
+
+        @media screen and (min-width: 768px) {
+                max-width: 354px;
+                flex-basis: calc((100% - 30px)/2);
+            }
+        
+        @media screen and (min-width: 1200px) {
+                max-width: 370px;
+                flex-basis: calc((100% - 60px)/3);
+            }
 }
 .card__image {
-    max-width: 100%;
-    height: auto;
 }
 
 .card__link {

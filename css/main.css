@@ -321,17 +321,21 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  max-width: 480px;
   width: 100%;
+}
+@media screen and (min-width: 450px) {
+  .container {
+    width: 480px;
+  }
 }
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 768px;
+    width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 1200px;
+    width: 1200px;
   }
 }
 
@@ -672,8 +676,8 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 528px;
-  height: 581px;
+  width: 100%;
+  height: 609px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -688,6 +692,17 @@ body {
 .backdrop.is-hidden .modal {
   -webkit-transform: translate(-50%, -50%) scaleY(0);
           transform: translate(-50%, -50%) scaleY(0);
+}
+@media screen and (min-width: 450px) {
+  .modal {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .form__title {
@@ -839,6 +854,17 @@ body {
      -moz-appearance: none;
           appearance: none;
   position: absolute;
+  line-height: 1.16;
+}
+@media screen and (max-width: 1200px) {
+  .validation__input {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .validation__input {
+    line-height: 1.7;
+  }
 }
 
 .validation {
@@ -1353,6 +1379,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1367,14 +1395,23 @@ body {
 
 .card {
   position: relative;
-  max-width: 370px;
+  width: 100%;
   background: #FFFFFF;
   border: 1px solid #EEEEEE;
 }
-
-.card__image {
-  max-width: 100%;
-  height: auto;
+@media screen and (min-width: 768px) {
+  .card {
+    max-width: 354px;
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .card {
+    max-width: 370px;
+    -ms-flex-preferred-size: calc((100% - 60px) / 3);
+        flex-basis: calc((100% - 60px) / 3);
+  }
 }
 
 .card__link {
