@@ -23,12 +23,12 @@
     background: $backgroundColor;
     border: 1px solid #EEEEEE;
 
-        @media screen and (min-width: 768px) {
+        @include tablet {
                 max-width: 354px;
                 flex-basis: calc((100% - 30px)/2);
             }
         
-        @media screen and (min-width: 1200px) {
+        @include desktop {
                 max-width: 370px;
                 flex-basis: calc((100% - 60px)/3);
             }

@@ -34,15 +34,16 @@
     transform: translate(-50%, -50%) scaleY(1);
     transition: transform $commonTransition 250ms;
 
+
     .backdrop.is-hidden & {
         transform: translate(-50%, -50%) scaleY(0);
     }
 
-    @media screen and (min-width:450px) {
+    @include mobile {
         width: 450px;
     }
 
-    @media screen and (min-width:1200px) {
+    @include desktop {
         width: 528px;
         height: 581px;
     }
@@ -196,7 +197,7 @@
         font-size: 12px;
         line-height: 1.16;
     }
-    @media screen and (min-width:1200px){
+    @include desktop {
         line-height: 1.7;
     }
 

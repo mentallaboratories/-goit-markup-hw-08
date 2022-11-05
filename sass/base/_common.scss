@@ -7,16 +7,16 @@
     width: 100%;
 
 
-    @media screen and (min-width:450px) {
+    @include mobile {
             width: 480px;
     
         }
 
-    @media screen and (min-width:768px) {
+    @include tablet {
             width: 768px;
         
         }
-    @media screen and (min-width:1200px) {
+    @include desktop {
             width: 1200px;
         }
 
@@ -25,25 +25,12 @@
 
 
 .cardset {
-        // display: flex;
         display: block;
-        
-        // gap: 30px;
-        // align-items: center;
-        // flex-direction: column;
-
-
-        @media screen and (min-width:480px) {
+        @include mobile {
             display: flex;
             flex-wrap: wrap;
             gap: 30px;
-            
-        }
-
-        @media screen and (min-width:1200px) {
-            
-        }
-    
+        }   
 }
 
 .accent {
@@ -62,6 +49,10 @@ body {
     letter-spacing: 0.03em;
 
 
+}
+
+.no-scroll {
+    overflow: hidden;
 }
 
 

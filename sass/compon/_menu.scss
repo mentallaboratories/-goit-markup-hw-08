@@ -1,12 +1,11 @@
 .menu {
     display: none;
 
-    @media screen and (min-width:760px) {
+    @include tablet {
         display: flex;
         gap: 50px;
         align-items: center;
     }
-    
 }
 
 
@@ -35,7 +34,7 @@
         content: "";
         position: absolute;
         left: 0;
-        top: 46px;
+        top: 44px;
 
         display: inline-block;
         width: 100%;
@@ -45,9 +44,10 @@
 
         background-color: $accentColor;
 
-        @media screen and (min-width:1200px) {
+        @include desktop{
             top: 45px;
         }
     }
+    
 
 }

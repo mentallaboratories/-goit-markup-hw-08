@@ -1,13 +1,13 @@
 .connect {
     display: none;
 
-    @media screen and (min-width:760px) {
+    @include tablet {
             display: flex;
             flex-direction: column;
             gap: 10px;
             align-items:flex-start;
         }
-    @media screen and (min-width:1200px) {
+    @include desktop {
             flex-direction: row;
             gap: 50px;
             align-items: center;
@@ -23,19 +23,23 @@
             color: $accentColor;
         }
 
-    @media screen and (min-width:760px) {
+    @include tablet {
             display: flex;
             gap: 8px;
             align-items: center;
         }
     
-    @media screen and (min-width:1200px) {
+    @include desktop {
             gap: 10px;
             font-size: 14px;
         }
 }
 
+
 .connect__icon {
+    width: inherit;
+    height: inherit;
+
     fill: $plainTextColor;
 
     transition: fill $commonTransition;
@@ -43,5 +47,23 @@
     .connect__link:hover &,
     .connect__link:focus & {
         fill: $accentColor;
+    }
+}
+
+.connect__icon--mail{
+    width: 14px;
+    height: 10px;
+    @include desktop{
+        width: 16px;
+        height: 12px;
+    }
+}
+
+.connect__icon--mobile{
+    width: 10px;
+    height: 14px;
+    @include desktop{
+        width: 10px;
+        height: 16px;
     }
 }
