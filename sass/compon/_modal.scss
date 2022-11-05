@@ -34,7 +34,6 @@
     transform: translate(-50%, -50%) scaleY(1);
     transition: transform $commonTransition 250ms;
 
-
     .backdrop.is-hidden & {
         transform: translate(-50%, -50%) scaleY(0);
     }
@@ -62,7 +61,7 @@
 }
 
 .form {
-    position: relative;
+    position: absolute;
     top: 0;
     left: 0;
 
