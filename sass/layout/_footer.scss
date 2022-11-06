@@ -39,8 +39,11 @@
     width: 100%;
     @include tablet{
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: baseline;
+    }
+    @include desktop{
+    justify-content: space-between;
     }
 }
 

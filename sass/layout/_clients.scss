@@ -2,17 +2,21 @@
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
 .client__cardset {
-    // display: flex;
-    // gap: 30px;
-    // flex-wrap: wrap;
+    @media screen and(min-width:320px) and (max-width:769px) {
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
 }
 .client__item {
     width: 100%;
     height: 92px;
-    
+    @media screen and (min-width:320px) {
+      flex-basis: calc((100% - 30px)/2);  
+    }
     @include mobile {
     width: 210px;
-    flex-basis: calc((100% - 30px)/2);
+    
     }
     @include tablet {
     width: 226px;
