@@ -703,6 +703,7 @@ body {
   opacity: 1;
   -webkit-transition: opacity var(--common-transition), visibility var(--common-transition);
   transition: opacity var(--common-transition), visibility var(--common-transition);
+  overflow: auto;
 }
 
 .is-hidden {

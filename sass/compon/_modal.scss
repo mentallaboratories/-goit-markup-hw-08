@@ -10,6 +10,8 @@
 
     opacity: 1;
     transition: opacity var(--common-transition), visibility var(--common-transition);
+
+    overflow: auto;
 }
 
 
@@ -33,6 +35,7 @@
 
     transform: translate(-50%, -50%) scaleY(1);
     transition: transform $commonTransition 250ms;
+
 
     .backdrop.is-hidden & {
         transform: translate(-50%, -50%) scaleY(0);
@@ -68,6 +71,7 @@
     width: 100%;
     height: 100%;
     padding: 40px;
+
 
 }
 
