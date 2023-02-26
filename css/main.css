@@ -729,7 +729,7 @@ body {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms, -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
-@media screen and (min-height: 354px) {
+@media screen and (min-height: 581px) {
   .modal {
     top: 50%;
     left: 50%;
