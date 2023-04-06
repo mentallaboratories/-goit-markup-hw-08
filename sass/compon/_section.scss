@@ -17,3 +17,31 @@
         font-size: 36px;
     }
 }
+
+
+// @mixin mobile {
+//     @media screen and (min-width:320px) {
+//         @content;
+//     }
+// }
+
+// @mixin tablet {
+//     @media screen and (min-width:768px) {
+//         @content;
+//     }
+// }
+
+// @mixin desktop {
+//     @media screen and (min-width:1280px) {
+//         @content;
+//     }
+// }
+
+// .section{
+//     border: 1px solid red;
+//     padding: 20px 0;
+//     @include tablet{
+//         padding: 60px 0;
+//     }
+// }
+
